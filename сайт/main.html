@@ -1,95 +1,100 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div>
-            <H1> HOTEL</H1>
-            <h2><a href="">main</a></h2>
-            <h2><a href="">rent</a></h2>
-            <h2><a href="#Services">services</a></h2>
-            <h2><a href="#Reviews">reviews</a></h2>
-            <h2><a href="">contacts</a></h2>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic%display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css">
+    <title>Burj Al Arab</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a href="" class="header__logo">
+                    HOTEL
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list"> 
+                        <li class="menu__item">
+                            <a href="" class="menu__link">
+                                main
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">
+                                rent
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">
+                                services
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">
+                                gallery
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">
+                                contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        
-        <div class="wrapper">
-            <input type="radio" name="point" id="slide1" checked>
-            <input type="radio" name="point" id="slide2">
-            <input type="radio" name="point" id="slide3">
-            <input type="radio" name="point" id="slide4">
-            <input type="radio" name="point" id="slide5">
-            <div class="slider">
-                <div class="slides slide1"></div>
-                <div class="slides slide2"></div>
-                <div class="slides slide3"></div>
-                <div class="slides slide4"></div>
-                <div class="slides slide5"></div>
-            </div>	
-            <div class="controls">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-                <label for="slide5"></label>
+        <main class="page">
+            <div class="page__main-block main-block">
+                <div class="main-block__container _container">
+                    <div class="main-block__body">
+                        <h1 class="main-block__title">
+                            Burj Al Arab
+                        </h1>
+                        <div class="main-block__text">
+                            One of the best 7-star hotels
+                        </div>
+                    </div>
+                </div>
+                <div class="main-block__image _ibg">
+                    <img src="images/dubaj3.jpg" alt="cover">
+                </div>
             </div>
-        </div>
-
-        <div class="Rent_menu">
-            <h3>arrival date</h3>
-            <h3>departure date</h3>
-            <h3>Rent</h3>
-        </div>
-
-        <div class="History" id="History">
-            <h1>HISTORY</h1>
-            <div>
-                <img src="images/dubaj4.jpg" alt="">
-                <p>
-                    Vulputate vestibulum nam tincidunt malesuada augue netus egestas nisi aliquet tristique, orci et pharetra dapibus conubia euismod scelerisque tempus pulvinar. Libero commodo pharetra lobortis porttitor vel cursus aenean imperdiet, ornare nam erat felis eros magnis conubia eu, metus inceptos hendrerit dignissim facilisis ridiculus in. Neque euismod quisque orci sed hendrerit himenaeos elementum sapien quis rutrum, congue ad curabitur ullamcorper aliquam blandit sit aliquet platea metus faucibus, condimentum commodo suscipit eros finibus habitasse fames ridiculus efficitur. Proin posuere integer turpis pharetra mi quis diam hac duis, purus class iaculis a finibus sodales maximus ultrices lorem vitae, pretium libero malesuada litora nam phasellus odio nec. Non ex erat fames velit fusce vel, mollis scelerisque class donec vivamus lobortis, cursus iaculis aenean nunc hendrerit. Consequat ante ridiculus pharetra posuere proin egestas bibendum hac sit, etiam eget dictum varius montes porta eu mauris, auctor nec diam nascetur aenean praesent nisi duis. Conubia justo fringilla purus dui egestas nunc congue, posuere torquent tristique cursus laoreet phasellus ac dignissim, nostra pellentesque malesuada quisque habitant lectus. Inceptos interdum duis sem litora sociosqu platea nam porttitor, orci risus tempus mi cursus sapien torquent euismod auctor, posuere donec commodo mollis fusce hac quis.  
-                </p>
+            <div class ="page__history history info-block">
+                <div class="history-block__container _container">
+                    <div class="history-block__body">
+                        <h2 class="info-block_title">
+                            HISTORY
+                        </h2>
+                        <div class="history-block__content">
+                            <div class="history-block__text">
+                                <p>
+                                    <img class="history_img" src="images/dubaj4.jpg" alt="image">
+                                    Vulputate vestibulum nam tincidunt malesuada augue netus egestas nisi aliquet tristique, orci et pharetra dapibus conubia euismod scelerisque tempus pulvinar. Libero commodo pharetra lobortis porttitor vel cursus aenean imperdiet, ornare nam erat felis eros magnis conubia eu, metus inceptos hendrerit dignissim facilisis ridiculus in. Neque euismod quisque orci sed hendrerit himenaeos elementum sapien quis rutrum, ongue ad curabitur ullamcorper aliquam blandit sit aliquet platea metus faucibus, condimentum commodo suscipit eros finibus habitasse fames ridiculus efficitur. Proin posuere integer turpis pharetra mi quis diam hac duis, purus class iaculis a finibus sodales maximus ultrices lorem vitae, pretium libero malesuada litora nam phasellus odio nec. c Non ex erat fames  velit fusce vel, mollis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="page__gallery-block gallery info-block">
+                <div class="gallery-block__body">
+                    <h2 class="info-block_title">
+                        GALLERY
+                    </h2>
+                    <div class="gallery-block__content">
+                        <div class="gallery-block__slider">
 
-        <div class="Services" id="Services">
-            <h1>SERVICES</h1>
-            <div>
-                <figure>
-                    <figcaption>
-
-                    </figcaption>
-
-
-                    <figcaption>
-                        
-                    </figcaption>
-
-
-                    <figcaption>
-                        
-                    </figcaption>
-
-
-                    <figcaption>
-                        
-                    </figcaption>
-
-
-                    <figcaption>
-                        
-                    </figcaption>
-                </figure>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </main>
 
-        <div class="Reviews" id="Reviews">
-            <h1>REVIEWS</h1>    
-        </div>
-        
-        <footer>
-
+        <footer class="footer ">
+            footer
         </footer>
-    </body>
+    </div>
+</body>
+
 </html>
