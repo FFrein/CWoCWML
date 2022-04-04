@@ -1,5 +1,5 @@
 # CWoCWML
-Course work on computer markup languages
+Course work on computer markup languages\n
 Курсовой проект по предмету «Компьютерные языки разметки»
 
 Автор
