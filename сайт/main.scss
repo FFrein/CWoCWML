@@ -26,6 +26,8 @@ html,body{
     color: black;
     font-weight: 500;
     font-family: Montserrat;
+    background-image: url("images/Фото-на-рабочий-стол-черное-необычное-13.jpg");
+
 }
 /*-----------------------------------------------------------*/
 .wrapper {
@@ -47,7 +49,7 @@ html,body{
 ._ibg img{
     position:absoute;
     width: 100%;
-    height: 100%;
+    height: 87%;
     max-height: 1080px;
     top:0;
     left:0;
@@ -61,6 +63,7 @@ html,body{
     top:0;
     z-index: 100;
     background: rgba(255, 255, 255, 0.75);
+    border-bottom: 2px rgba(38, 38, 38, 0.88) solid;
 }
 .header__container{
     display: flex;
@@ -86,17 +89,29 @@ html,body{
     .header__menu {
         margin: 0px 0px 0px 100px;
     }
+    .header__logo{
+        font-size: 40px;
+    }
 }
 /*мобильный размер*/
 @media (max-width: 767px){
     .header__menu {
         margin: 0px 0px 0px 80px;
     }
+    .header__logo{
+        font-size: 30px;
+    }
 }
 /*мобильный размер2*/
 @media (max-width: 479px){
     .header__menu {
         margin: 0px 0px 0px 60px;
+    }
+}
+/*мобильный размер2*/
+@media (max-width: 365px){
+    .header__menu {
+        margin: 0px 0px 0px 0px;
     }
 }
 .menu{
@@ -127,19 +142,14 @@ html,body{
 /*--------------------------Page------------------------------*/
 .page{
     flex: 1 1 auto;
+    box-sizing:content-box;
 }
 /*--------------------------Main------------------------------*/
 .main{
     flex: 1 1 auto;
 }
 .main-block{
-    height:1000; //касяк, не правильно маштабируется по  оси y
-}
-.page__main-block{
-    
-}
-.main-block__container{
-    
+    height:900px; //касяк, не правильно маштабируется по  оси y
 }
 .main-block__body{
     padding: 162px 0px 0px 0px;
@@ -148,7 +158,7 @@ html,body{
     max-width:415px;
 }
 .main-block__title{
-    color: #990000;
+    color: #A60000;
     line-height: calc(78 / 64 * 100%);
     font-weight: 800;
     font-size: 64px;
@@ -160,21 +170,16 @@ html,body{
     line-height: 44px;
     padding-top: 81px;
 }
-/*.main-block__button{
-
-}*/
 .main-block__image{
     position: absolute;
-    width: 100%;
-    height:100%;
+    height: 1080px;
     top:0;
     left:0;
 }
-
 .info-block{
     margin: 128px 0 0 0;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 1);
 }
 .info-block_title {
     text-align: center;
@@ -185,22 +190,10 @@ html,body{
     line-height: 59px;
     color: #990000;
 }
-.page__history {
-    
-}
-.history-block__body{
-    padding: 3px 0 25px 0;
+.info-block__body{
+    padding: 3px 0 50px 0;
     position: relative;
     z-index: 2;
-    margin-bottom: 54px;
-}
-.history {
-}
-.history-block__container {
-}
-
-.history-block__content{
-
 }
 .history_img{
     width: 50%;
@@ -221,10 +214,29 @@ html,body{
         margin: 0 0 15px 0;
         float:none;
     }
-    .history-block__text{
+}
+.googlemap-block__content{
+    margin: 0 auto;
+    position: relative;
+    height:600px;
+    width: 80%;
+    
+}
+.googlemap-block__content iframe{
+    margin: 0 auto;
+    width:100%;
+    height:100%;
+    border-radius: 25px;
+    border:5px solid rgba(38, 38, 38, 0.88);
+}
+@media (max-width: 992px){
+    .googlemap-block__content iframe{
+        border:5px dotted rgba(38, 38, 38, 0.88);
     }
 }
 /*-------------------------Подвал-----------------------------*/
 .footer{
-background-color: rgba(38, 38, 38, 0.88);
+color: white;
+width: 1920px;
+height: 100px;
 }

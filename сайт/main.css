@@ -32,6 +32,7 @@ html, body {
   color: black;
   font-weight: 500;
   font-family: Montserrat;
+  background-image: url("images/Фото-на-рабочий-стол-черное-необычное-13.jpg");
 }
 
 /*-----------------------------------------------------------*/
@@ -63,7 +64,7 @@ html, body {
 ._ibg img {
   position: absoute;
   width: 100%;
-  height: 100%;
+  height: 87%;
   max-height: 1080px;
   top: 0;
   left: 0;
@@ -79,6 +80,7 @@ html, body {
   top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0.75);
+  border-bottom: 2px rgba(38, 38, 38, 0.88) solid;
 }
 
 .header__container {
@@ -113,6 +115,9 @@ html, body {
   .header__menu {
     margin: 0px 0px 0px 100px;
   }
+  .header__logo {
+    font-size: 40px;
+  }
 }
 
 /*мобильный размер*/
@@ -120,12 +125,22 @@ html, body {
   .header__menu {
     margin: 0px 0px 0px 80px;
   }
+  .header__logo {
+    font-size: 30px;
+  }
 }
 
 /*мобильный размер2*/
 @media (max-width: 479px) {
   .header__menu {
     margin: 0px 0px 0px 60px;
+  }
+}
+
+/*мобильный размер2*/
+@media (max-width: 365px) {
+  .header__menu {
+    margin: 0px 0px 0px 0px;
   }
 }
 
@@ -164,6 +179,8 @@ html, body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 /*--------------------------Main------------------------------*/
@@ -174,7 +191,7 @@ html, body {
 }
 
 .main-block {
-  height: 1000;
+  height: 900px;
 }
 
 .main-block__body {
@@ -185,7 +202,7 @@ html, body {
 }
 
 .main-block__title {
-  color: #990000;
+  color: #A60000;
   line-height: calc(78 / 64 * 100%);
   font-weight: 800;
   font-size: 64px;
@@ -199,22 +216,18 @@ html, body {
   padding-top: 81px;
 }
 
-/*.main-block__button{
-
-}*/
 .main-block__image {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  height: 1080px;
   top: 0;
   left: 0;
 }
 
 .info-block {
   margin: 128px 0 0 0;
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: inset 0px 0px 40px black;
+          box-shadow: inset 0px 0px 40px black;
 }
 
 .info-block_title {
@@ -227,11 +240,10 @@ html, body {
   color: #990000;
 }
 
-.history-block__body {
-  padding: 3px 0 25px 0;
+.info-block__body {
+  padding: 3px 0 50px 0;
   position: relative;
   z-index: 2;
-  margin-bottom: 54px;
 }
 
 .history_img {
@@ -257,8 +269,31 @@ html, body {
   }
 }
 
+.googlemap-block__content {
+  margin: 0 auto;
+  position: relative;
+  height: 600px;
+  width: 80%;
+}
+
+.googlemap-block__content iframe {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  border: 5px solid rgba(38, 38, 38, 0.88);
+}
+
+@media (max-width: 992px) {
+  .googlemap-block__content iframe {
+    border: 5px dotted rgba(38, 38, 38, 0.88);
+  }
+}
+
 /*-------------------------Подвал-----------------------------*/
 .footer {
-  background-color: rgba(38, 38, 38, 0.88);
+  color: white;
+  width: 1920px;
+  height: 100px;
 }
 /*# sourceMappingURL=main.css.map */
