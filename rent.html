@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic%display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="services.css">
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/rent.css">
+    <link rel="shortcut icon" href="Styles/images/icon.png" type="image/x-icon">
     <title>Burj Al Arab</title>
 </head>
 <body>
@@ -47,53 +47,46 @@
             </div>
         </header>
         <main class="page">
-            <div class="headblock__main">
-                <div class="Title__main">
-                    <h1>Services</h1>
+            <div class="Rent-block__container">
+                <div class="Rent-block__col50">
+                    <div class="Rent-block__col">
+                        <h4>Оформленеи заказа</h4>
+                        <label for="fname"> Полное имя</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Иван Петрович Семенов">
+                        <label for="email"> Электронный адрес</label>
+                        <input type="text" id="email" name="email" placeholder="john@example.com">
+                        <label for="rent"> День заселения</label>
+                        <input type="date" id="date" name="date">
+                        <label for="rent_days"> Время прибывания</label>
+                        <input type="text" id="days" name="days" placeholder="14">
+                        <label for="services"> Услуги</label>
+                        <div class="Rent-block__servecis">
+                            <input type="checkbox">Casino</br>
+                            <input type="checkbox">Beauty salon</br>
+                            <input type="checkbox">Buffet</br>
+                            <input type="checkbox">Parking spaces</br>
+                            <input type="checkbox">Fitness center 300$</br>
+                        </div>
+                    </div>
+                    <div class="Rent-block__col">
+                        <h4>Payment</h4>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
                 </div>
-                <div class="headblock-background__main">
-                    <img class="background-head-image" src="images/dubaj3 1.png" alt="cover">
-                </div>
+                    <div class="Rent-block__button">
+                        <button class="button__ckeckout">Continue to checkout</button>
+                    </div>
             </div>
-            <div class="information-block__main">
-                <div class="Infoblock-menu__container">
-                    <ul class="infoblock__menu">
-                        <li>Casino</li>
-                        <li>Beauty salon</li>
-                        <li>Buffet</li>
-                        <li>Parking spaces</li>
-                        <li>Fitness center</li>
-                    </ul>
-                </div>
-                <div class="Infoblock-block__container">
-                    <p class="Infoblock-block__text">
-                        At Burj Al Arab Casino you will find serious online casinos in 
-                        Arabic. All our online casinos or called  كازينو اون لاين  in 
-                        arabic we present are licensed and monitored by the gaming 
-                        authority. As time has passed, so has the demand in gambling been 
-                        observed to be at an all time high. No matter what the location is, 
-                        you will always find many options to gamble there.
-                    </br>
-                        Dubai is the most commercial place in the whole of
-                         UAE. Here you get to experience the best hotels 
-                         that offer world class luxury accommodation with 
-                         excellent customer services. The Burj Al Arab is
-                          the only seven star hotel in the world. This 
-                          wonderful Hotel provides its customers with 
-                          rooms offering full sea view and butler service.
-                            It also has 9 restaurants, a set of 
-                            interactive swimming pools, a full shopping 
-                            centre, a totally private beach. Here you 
-                            find also spa and a centre for children’s 
-                            activities. Why a lot of people are looking 
-                            for the Burj Al Arab Casino cannot be 
-                            answered here exactly. Many probably believe 
-                            that such a large hotel also has a casino. 
-                            Unfortunately, there is no casino offer in 
-                            Burj Al Arab.
-                    <p>
-                </div>
-            </div>
+
         </main>
         <footer id=contacts class="footer-block">
             <div class="_container">
