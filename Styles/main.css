@@ -222,6 +222,8 @@ html, body {
   height: 1080px;
   top: 0;
   left: 0;
+  -webkit-transform: translate();
+          transform: translate();
 }
 
 .info-block {
@@ -268,6 +270,88 @@ html, body {
     margin: 0 0 15px 0;
     float: none;
   }
+}
+
+/*--------------------слайдер-----------------------------*/
+.gallery-block-slider__content {
+  padding-bottom: 25px;
+}
+
+.gallery-block__content {
+  width: 90%;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 5px solid rgba(38, 38, 38, 0.88);
+  border-radius: 5px;
+  padding-bottom: 20px;
+  background-color: rgba(38, 38, 38, 0.7);
+}
+
+.navigation {
+  bottom: 16px;
+  left: 50%;
+  -webkit-transform: translateX(42%);
+          transform: translateX(42%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bar {
+  height: 8px;
+  width: 30px;
+  margin: 5px;
+  background-color: #262626;
+  border-radius: 5px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.bar:hover {
+  background-color: rgba(131, 0, 0, 0.7);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.gallery-block__slider {
+  width: 400%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+input[name="slide-buttom"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+#slbt1:checked ~ .s1 {
+  margin-left: 0%;
+}
+
+#slbt2:checked ~ .s1 {
+  margin-left: -25%;
+}
+
+#slbt3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+#slbt4:checked ~ .s1 {
+  margin-left: -75%;
 }
 
 /*--------------------карта-------------------------------*/
