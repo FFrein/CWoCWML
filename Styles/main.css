@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*обнудение*/
+/*обнуление*/
 *, *::before, ::afret {
   padding: 0;
   margin: 0;
@@ -133,7 +133,7 @@ html, body {
 /*мобильный размер2*/
 @media (max-width: 479px) {
   .header__menu {
-    margin: 0px 0px 0px 60px;
+    margin: 0px 0px 0px 0px;
   }
 }
 
@@ -289,10 +289,9 @@ html, body {
 }
 
 .navigation {
-  bottom: 16px;
-  left: 50%;
-  -webkit-transform: translateX(42%);
-          transform: translateX(42%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,6 +330,8 @@ html, body {
 .slide img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 input[name="slide-buttom"] {

@@ -48,43 +48,45 @@
         </header>
         <main class="page">
             <div class="Rent-block__container">
-                <div class="Rent-block__col50">
-                    <div class="Rent-block__col">
-                        <h4>Оформленеи заказа</h4>
-                        <label for="fname"> Полное имя</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Иван Петрович Семенов">
-                        <label for="email"> Электронный адрес</label>
-                        <input type="text" id="email" name="email" placeholder="john@example.com">
-                        <label for="rent"> День заселения</label>
-                        <input type="date" id="date" name="date">
-                        <label for="rent_days"> Время прибывания</label>
-                        <input type="text" id="days" name="days" placeholder="14">
-                        <label for="services"> Услуги</label>
-                        <div class="Rent-block__servecis">
-                            <input type="checkbox">Casino</br>
-                            <input type="checkbox">Beauty salon</br>
-                            <input type="checkbox">Buffet</br>
-                            <input type="checkbox">Parking spaces</br>
-                            <input type="checkbox">Fitness center 300$</br>
+                <form action="">
+                    <div class="Rent-block__col50">
+                        <div class="Rent-block__col">
+                            <h4>Оформленеи заказа</h4>
+                            <label for="fname"> Полное имя</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Иван Петрович Семенов">
+                            <label for="email"> Электронный адрес</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="rent"> День заселения</label>
+                            <input type="date" id="date" name="date">
+                            <label for="rent_days"> Время прибывания</label>
+                            <input type="text" id="days" name="days" placeholder="14">
+                            <label for="services"> Услуги</label>
+                            <div class="Rent-block__servecis">
+                                <input type="checkbox">Casino</br>
+                                <input type="checkbox">Beauty salon</br>
+                                <input type="checkbox">Buffet</br>
+                                <input type="checkbox">Parking spaces</br>
+                                <input type="checkbox">Fitness center 300$</br>
+                            </div>
+                        </div>
+                        <div class="Rent-block__col">
+                            <h4>Payment</h4>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                            <label for="expyear">Exp Year</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="2018">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="352">
                         </div>
                     </div>
-                    <div class="Rent-block__col">
-                        <h4>Payment</h4>
-                        <label for="cname">Name on Card</label>
-                        <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                        <label for="ccnum">Credit card number</label>
-                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                        <label for="expmonth">Exp Month</label>
-                        <input type="text" id="expmonth" name="expmonth" placeholder="September">
-                        <label for="expyear">Exp Year</label>
-                        <input type="text" id="expyear" name="expyear" placeholder="2018">
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="352">
-                    </div>
-                </div>
-                    <div class="Rent-block__button">
-                        <button class="button__ckeckout">Continue to checkout</button>
-                    </div>
+                        <div class="Rent-block__button">
+                            <button class="button__ckeckout">Continue to checkout</button>
+                        </div>
+                </form>
             </div>
 
         </main>

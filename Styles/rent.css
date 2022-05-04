@@ -242,6 +242,21 @@ html, body {
   margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  .Rent-block__col {
+    width: 100%;
+  }
+  .Rent-block__col50 {
+    display: block;
+  }
+  .Rent-block__col input[type=text] {
+    width: 100%;
+  }
+  .button__ckeckout {
+    width: 90%;
+  }
+}
+
 /*--------------------подвал-------------------------------*/
 .footer-block {
   -webkit-box-flex: 1;

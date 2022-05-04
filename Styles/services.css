@@ -168,8 +168,7 @@ html, body {
 
 /*мобильный размер2*/
 @media (max-width: 479px) {
-  ed66
-.menu__link {
+  .menu__link {
     font-size: 18px;
   }
 }
@@ -287,31 +286,77 @@ input[name="text-buttom"] {
 #check1:checked ~ .text1 {
   position: relative;
   visibility: visible;
+  word-break: break-word;
 }
 
 #check2:checked ~ .text2 {
   position: relative;
   visibility: visible;
+  word-break: break-word;
 }
 
 #check3:checked ~ .text3 {
   position: relative;
   visibility: visible;
+  word-break: break-word;
 }
 
 #check4:checked ~ .text4 {
   position: relative;
   visibility: visible;
+  word-break: break-word;
 }
 
 #check5:checked ~ .text5 {
   position: relative;
   visibility: visible;
+  word-break: break-word;
+}
+
+.buttom_menu {
+  width: 50px;
+  height: 25px;
 }
 
 @media (max-width: 600px) {
   .Infoblock-block__container {
     padding: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .information-block__main {
+    display: inline-block;
+  }
+  .infoblock__menu {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .infoblock__menu li {
+    margin: 10px;
+  }
+  .infoblock__menu li:not(:first-child) {
+    margin-top: 10px;
+  }
+  .Infoblock-block__container {
+    width: 100%;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .Infoblock-menu__container {
+    margin-right: 0;
   }
 }
 
