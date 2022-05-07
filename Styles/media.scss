@@ -33,6 +33,13 @@
     .googlemap-block__content iframe{
         border:5px dotted rgba(38, 38, 38, 0.88);
     }
+    .gallery-block__content {
+        height: 100%;
+        padding-bottom: 0;
+    }
+    .googlemap-block__content{
+        height: 300px;
+    }
 }
 @media (max-width: 900px){
     .information-block__main{
@@ -90,8 +97,10 @@
     .header__menu {
         margin: 0px 0px 0px 60px;
     }
+    .infoblock__menu li {
+        width: 124px;
+    }
 }
-
 @media (max-width: 365px){
     .header__menu {
         margin: 0px 0px 0px 0px;
