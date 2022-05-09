@@ -115,17 +115,9 @@
 input[name="slide-buttom"]{    
     position: absolute; 
     visibility: hidden;
-    //margin-right: 17px;
-    //z-index: 40;
-    //margin-top:605px;
-    }
-    //input[name="slide-buttom"]:first-child{    
-    //    margin-left: 11%;
-    //}
-
+}
 #slbt1:checked ~ .s1 {
     margin-left:0%;
-    //margin-left:-14.5%;
 }
 #slbt2:checked ~ .s1{
     margin-left:-25%;
