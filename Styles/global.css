@@ -164,4 +164,12 @@ html, body {
   margin: auto;
   position: relative;
 }
+
+.footer-info-block a:visited {
+  color: white;
+}
+
+.footer-info-block a {
+  color: white;
+}
 /*# sourceMappingURL=global.css.map */
