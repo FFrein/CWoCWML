@@ -1,4 +1,8 @@
 /*--------------------------Main------------------------------*/
+@mixin MixOne {
+    margin: 0 auto;
+}
+
 .main{
     flex: 1 1 auto;
 }
@@ -72,7 +76,7 @@
 .gallery-block__content{
     width: 90%;
     height: 600px;
-    margin: 0 auto;
+    @include MixOne;
     overflow: hidden; // всё что выходит за рамки скрывается
     border: 5px solid rgba(38, 38, 38, 0.88);
     border-radius: 5px;
@@ -131,14 +135,14 @@ input[name="slide-buttom"]{
 }
 /*--------------------карта-------------------------------*/
 .googlemap-block__content{
-    margin: 0 auto;
+    @include MixOne;
     position: relative;
     height:600px;
     width: 80%;
     
 }
 .googlemap-block__content iframe{
-    margin: 0 auto;
+    @include MixOne;
     width:100%;
     height:100%;
     border-radius: 25px;

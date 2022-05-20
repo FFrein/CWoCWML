@@ -1,4 +1,8 @@
 /*--------------------------Page------------------------------*/
+@mixin mixglobal {
+    display: block;
+}
+
 .page{
     flex: 1 1 auto;
     box-sizing:content-box;
@@ -16,7 +20,7 @@
     padding: 25px;
 }
 .Rent-block__container h4{
-    display: block;
+    @include mixglobal;
     font-size: 30px;
     font-weight: 600;
 }
@@ -27,7 +31,7 @@
     text-align: center;
 }
 .Rent-block__col label{
-    display: block;
+    @include mixglobal;
     padding-bottom: 20px;
 }
 .Rent-block__col label:not(:first-child){
@@ -41,11 +45,11 @@
     margin-bottom:12px;
 }
 .Rent-block__button{
-    display: block;
+    @include mixglobal;
     padding: 25px;
 }
 .button__ckeckout {
-    display: block;
+    @include mixglobal;
     width: 30%;
     height: 50px;
     margin: 0 auto;

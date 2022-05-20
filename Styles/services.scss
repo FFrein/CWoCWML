@@ -1,4 +1,10 @@
 /*------------------------------info---------------------------------*/
+@mixin menumix {
+    position: relative;
+    visibility: visible;
+    word-break: break-word;
+}
+
 .headblock-background__main{
     height: 400px;
 }
@@ -76,29 +82,19 @@ input[name="text-buttom"]{
     visibility: hidden;
 }
 #check1:checked ~ .text1 {
-    position: relative;
-    visibility: visible;
-    word-break: break-word;
+    @include menumix;
 }
 #check2:checked ~ .text2{
-    position: relative;
-    visibility: visible;
-    word-break: break-word;
+    @include menumix;
 }
 #check3:checked ~ .text3 {
-    position: relative;
-    visibility: visible;
-    word-break: break-word;
+    @include menumix;
 }
 #check4:checked ~ .text4 {
-    position: relative;
-    visibility: visible;
-    word-break: break-word;
+    @include menumix;
 }
 #check5:checked ~ .text5 {
-    position: relative;
-    visibility: visible;
-    word-break: break-word;
+    @include menumix;
 }
 .buttom_menu{
     width: 50px;
